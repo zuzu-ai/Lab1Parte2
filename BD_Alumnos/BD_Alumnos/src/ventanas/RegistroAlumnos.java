@@ -209,7 +209,7 @@ public class RegistroAlumnos extends javax.swing.JFrame {
             String ID = txt_buscar.getText().trim();
             
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/planilla_bd", "root", "6182");
-            PreparedStatement pst = cn.prepareStatement("update concepto_5335 set nombre_concepto = ?, efecto_concepto = ?, estatus concepto=? where codigo_concepto = " + ID);
+            PreparedStatement pst = cn.prepareStatement("update concepto_5335 set nombre_concepto = ?, efecto_concepto = ?, estatus_concepto=? where codigo_concepto = "+ID);
             
             pst.setString(1, txt_nombre.getText().trim());
             pst.setString(2, txt_efecto.getText().trim());

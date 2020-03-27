@@ -54,9 +54,9 @@ codigo_empleado varchar(5) not null,
 codigo_concepto varchar(5) not null,
 valor_nominad float(10) not null,
 primary key(codigo_nomina, codigo_empleado, codigo_concepto),
-foreign key (codigo_concepto) references concepto_17632(codigo_concepto),
-foreign key (codigo_nomina) references nominae_17632(codigo_nomina),
-foreign key (codigo_empleado) references empleado_17632(codigo_empleado)
+foreign key (codigo_concepto) references concepto_5335(codigo_concepto),
+foreign key (codigo_nomina) references nominae_5335(codigo_nomina),
+foreign key (codigo_empleado) references empleado_5335(codigo_empleado)
 )engine=InnoDB;
 
 select * from concepto_5335;
